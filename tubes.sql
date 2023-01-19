@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2023 at 02:09 PM
+-- Generation Time: Jan 19, 2023 at 04:11 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -32,8 +32,20 @@ CREATE TABLE `produk` (
   `namaProduk` varchar(45) NOT NULL,
   `jumlahProduk` int(100) NOT NULL,
   `jenisProduk` varchar(45) NOT NULL,
-  `Riwayat_idRiwayat` int(11) NOT NULL
+  `Riwayat_idRiwayat` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`idProduk`, `namaProduk`, `jumlahProduk`, `jenisProduk`, `Riwayat_idRiwayat`) VALUES
+(2, 'Black Coffee', 5, 'Kopi', NULL),
+(3, 'Latte', 5, 'Kopi', NULL),
+(4, 'Cappuccino', 5, 'Kopi', NULL),
+(5, 'Black Tea', 5, 'Teh', NULL),
+(6, 'Green Tea', 5, 'Teh', NULL),
+(7, 'White Tea', 5, 'Teh', NULL);
 
 -- --------------------------------------------------------
 
@@ -73,7 +85,7 @@ ALTER TABLE `riwayat`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `idProduk` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `idProduk` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `riwayat`
