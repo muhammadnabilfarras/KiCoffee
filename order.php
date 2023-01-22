@@ -1,8 +1,10 @@
 <?php
+include "db.php";
 
 session_start();
 
 $_SESSION['beli'] = $_POST['pesanan'];
+
 
 ?>
 
@@ -31,14 +33,17 @@ $_SESSION['beli'] = $_POST['pesanan'];
         <input type="text" id="nama" name="nama"><br>
         <label for="alamat">Alamat:</label><br>
         <input type="text" id="alamat" name="alamat"><br>
+
         <label for="telepon">Nomor Telepon:</label><br>
         <input type="text" id="telepon" name="telepon"><br>
+
         <p>Pilih metode pengiriman:</p>
-        <input type="radio" id="ots" name="pengiriman" value="ots">
-        <label for="ots">Ambil di tempat</label><br>
-        <input type="radio" id="delv" name="pengiriman" value="delv">
-        <label for="delv">Antar ke rumah</label><br>
-        <input type="submit" value="Bayar">
+
+        <input type="radio" name="pengiriman" value="Ambil">
+        <label for="Ambil">Ambil di tempat</label><br>
+        <input type="radio" name="pengiriman" value="Antar">
+        <label for="Antar">Antar ke rumah</label><br>
+        <input type="submit" name="submit" value="Bayar">
     </form>
 
 </body>
