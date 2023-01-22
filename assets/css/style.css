@@ -1,10 +1,3 @@
-/**
-* Template Name: OnePage - v4.7.0
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1676,31 +1669,27 @@ section {
 
 /* Payment */
 #pay { 
-  width: 70%;
-  height: 50vh;
   position: relative;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 #pay h1 {
-  margin: 0;
   font-size: 48px;
   font-weight: 750;
-  line-height: 70px;
+  line-height: 2px;
   color: #124265;
   font-family: "Poppins", sans-serif;
 }
 #pay h5 {
-  font-size: 30px;
-  font-weight: 750;
+  font-size: 20px;
+  font-weight: 5px;
+  margin-top: 10px;
   color: #124265;
   font-family: "Poppins", sans-serif;
 }
 #pay .card-body {  
-  margin: 50px;
-  padding: 40px;
-  position: relative;
-  overflow: hidden;
+  margin: 30px;
+  padding: 30px;
   background: #fff;
   box-shadow: 0 0 0 0 rgba(18, 66, 101, 0.08);
   transition: all 0.3s ease-in-out;

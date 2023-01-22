@@ -76,8 +76,8 @@ foreach($produkId as $data){
         <div class="col-sm-6">
             <div class="card">
             <div class="card-body">
-                <h5>Daftar Pesanan :</h5><br>
-                <table>
+                <h5>Daftar Pesanan :</h5>
+                <table style="margin-left:auto;margin-right:auto" border="3">
                     <tr>
                         <th>Nama Produk</th>
                         <th>Harga Produk</th>
