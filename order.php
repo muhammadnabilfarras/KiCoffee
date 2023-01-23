@@ -10,41 +10,58 @@ $_SESSION['beli'] = $_POST['pesanan'];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Pembayaran</title>
 </head>
+
 <body>
-    <h1>Info Pesanan</h1>
-    <?php
-    foreach($_SESSION['beli'] as $pesanan){
-        ?>
-        <ul>
-            <li><?php echo $pesanan;?></li>
-        </ul>
-    <?php 
-    } 
-    ?>
-    <h1>Data diri</h1>
-    <form action="payment.php" method="post">
-        <label for="nama">Nama lengkap:</label><br>
-        <input type="text" id="nama" name="nama"><br>
-        <label for="alamat">Alamat:</label><br>
-        <input type="text" id="alamat" name="alamat"><br>
+<section id=ord>
 
-        <label for="telepon">Nomor Telepon:</label><br>
-        <input type="text" id="telepon" name="telepon"><br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1>Info Pesanan</h1>
+                <?php
+                foreach($_SESSION['beli'] as $pesanan){
+                    ?>
+                    <ul>
+                        <li><?php echo $pesanan;?></li>
+                    </ul>
+                <?php 
+                } 
+                ?>
+            </div>
+        </div>
 
-        <p>Pilih metode pengiriman:</p>
+        <div class="row">
+            <div class="col">
+                <h1>Data diri</h1>
+                <form action="payment.php" method="post">
+                    <label for="nama">Nama lengkap :</label><br>
+                    <input type="text" id="nama" name="nama"><br>
+                    <label for="alamat">Alamat :</label><br>
+                    <input type="text" id="alamat" name="alamat"><br>
 
-        <input type="radio" name="pengiriman" value="Ambil">
-        <label for="Ambil">Ambil di tempat</label><br>
-        <input type="radio" name="pengiriman" value="Antar">
-        <label for="Antar">Antar ke rumah</label><br>
-        <input type="submit" name="submit" value="Bayar">
-    </form>
+                    <label for="telepon">Nomor Telepon :</label><br>
+                    <input type="text" id="telepon" name="telepon"><br>
 
+                    <p>Pilih metode pengiriman :</p>
+
+                    <input type="radio" name="pengiriman" value="Ambil">
+                    <label for="Ambil">Ambil di tempat</label><br>
+                    <input type="radio" name="pengiriman" value="Antar">
+                    <label for="Antar">Antar ke rumah</label><br><br> 
+                    <input type="submit" name="submit" value="Bayar">
+                </form>
+            </div>
+        </div>
+    </div>  
+</section> 
 </body>
+
 </html>
