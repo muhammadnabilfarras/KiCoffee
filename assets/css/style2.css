@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* === Hero section === */
+.hero {
+    background: url('../img/hero-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 2px; */
+    /* height: 100%; */
+    min-height: 500px;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title {
+    margin-top: 2rem;
+}
+
+.hero-title h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.hero-title p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.hero-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.hero-card {
+    width: 290px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.hero-card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    /* transform: translate(-50%, 50%); */
+    opacity: 1;
+}
+
+.hero-card-details {
+    color: black;
+    height: 100%;
+    /* gap: .5em; */
+    display: grid;
+    place-content: center;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.description {
+    color: rgb(134, 134, 134);
+}
+/* === Hero end === */
+
+/* === Product Section === */
+
+.product {
+    margin-top: 2.5rem;
+    box-shadow: 0 4px 6px -6px #222;
+    margin-bottom: 1px;
+}
+
+.product-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.col-product-item{
+    margin-top: 10%;
+}
+.col-product-category h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+.col-product-container{
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+/* Product image */
+.col-product img {
+    margin: 1rem;
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.col-product img:hover {
+    opacity: 0.7;
+}
+
+.product-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.col-product{
+    flex-basis: 50%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+/* === */
+.layer{
+    height: 80.5%;
+    width: 80%;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.layer:hover{
+    background: rgba(0,0,0,0.7);;
+}
+.layer h3{
+    width: 45%;
+    font-weight: 450;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 10%;
+    opacity: 0.7;
+}
+/* Product image end */
+
+.dropBtn {
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.product-list {
+    margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-product {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-product a {
+    color: black;
+    padding: 12px 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-product a:hover {
+    background-color: #f1f1f1
+}
+
+.product-list:hover .dropdown-product {
+    display: block;
+}
+
+.product-list:hover .dropBtn {
+    background-color: #0071e2;
+}
+
+/* === Footer Section === */
+.col-footer{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col-footer .col-footer1{
+    background-color: whitesmoke;
+    padding: 50px;
+}
+.col-footer-contact .github, .col-footer-contact .facebook, .col-footer-contact .instagram{
+    font-size: 2rem;
+    padding: 8px
+    /* display: flex;
+    flex-direction: column; */
+}

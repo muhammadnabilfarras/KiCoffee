@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 1.2rem;
+    font-weight: 400;
+    color: #2487ce;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #fff;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    border-bottom: 0.1px solid black;
+}
+
+.navbar {
+    /* justify-content: right; */
+    padding: 1rem;
+    flex: 1;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #0071e2;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color: 24b4fb;
+}
+
+.product-btn {
+    display: block;
+    margin-top: 0.8rem;
+    margin-right: 1.5rem;
+    align-items: center;
+    appearance: none;
+    background-color: 24b4fb;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,24b4fb 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.product-btn:focus {
+    box-shadow: 24b4fb 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.product-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 24b4fb 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.product-btn:active {
+    box-shadow: 24b4fb 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.product-btn {
+    border: 2px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 0.9em;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+}
+
+.product-btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-btn:hover {
+    background-color: #0071e2;
+}
