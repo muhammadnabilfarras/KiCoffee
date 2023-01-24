@@ -148,7 +148,7 @@
 <body>
     <header class="header" id="header">
         <div class="navbar-container">
-            <h1 class="logo">Kicoffee</h1>
+            <h1 class="logo">KiCoffee</h1>
             <nav class="navbar">
                 <ul>
                     <li><a href="#http://127.0.0.1:5500/index2.html#https://github.com/muhammadnabilfarras/KiCoffee.git" class="nav-link">Home</a></li>
@@ -191,7 +191,7 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>non-Coffee</th>
+                    <th>Non-Coffee</th>
                     <!-- <th>Jenis produk</th> -->
                 </tr>
             </thead>
