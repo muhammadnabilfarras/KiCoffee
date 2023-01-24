@@ -29,8 +29,9 @@
         <thead>
             <tr>
                 <th>#</th>
+                <th>Foto produk</th>
                 <th>Nama produk</th>
-                <th>Jenis produk</th>
+                <th>Harga produk</th>
             </tr>
         </thead>
         <tbody>
@@ -44,8 +45,11 @@
                     <td>
                         <input type="checkbox" name="pesanan[]" value="<?php echo $rows['namaProduk']; ?>">
                     </td>
+                    <td>
+                        <img src="img/<?= $rows['gambar']; ?>">
+                    </td>
                     <td><?php echo $rows['namaProduk']; ?></td>
-                    <td><?php echo $rows['jenisProduk']; ?></td>
+                    <td><?php echo $rows['hargaProduk']; ?></td>
                 </tr>
             <?php } ?>
         </tbody>
