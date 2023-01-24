@@ -95,7 +95,7 @@
     
     }
     .col-product{
-        width: 40%;
+        width: 50%;
         margin: 5% auto;
         border: 2px solid black;
         background-color: whitesmoke;
@@ -104,10 +104,15 @@
         margin: 0 auto;
         padding: 30px
     }
+    .col-product img{
+        width: 100%;
+        height: 100%;
+    }
     td,th {
         padding: 10px 50px;
         margin: 5px;
         text-align: center;
+        font-size: 1.5rem;
     }
     .col-product button{
         background-color: #26B0F5;
@@ -151,7 +156,7 @@
             <h1 class="logo">Kicoffee</h1>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#http://127.0.0.1:5500/index2.html#https://github.com/muhammadnabilfarras/KiCoffee.git" class="nav-link">Home</a></li>
+                    <li><a href="./index2.html" class="nav-link">Home</a></li>
                 </ul>
             </nav>
         </div>
@@ -259,9 +264,9 @@
 
             <section class="col-footer-contact">
                 <br><br><br><br>
-                <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/muhammadnabilfarras/KiCoffee" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/muhammadnabilfarras/KiCoffee" class="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/muhammadnabilfarras/KiCoffee" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </section>
             
         </section>
