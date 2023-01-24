@@ -1696,9 +1696,7 @@ section {
   border-radius: 15px;
   z-index: 1;
 }
-#pay .card-body:hover {
-  transform: scale(1.08);
-}
+
 
 /* Order */
 #ord { 
@@ -1721,4 +1719,18 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   z-index: 1;
+}
+/* Order */
+#header{
+  background-color: #f9f9f9;
+}
+#header .navbar-container h1{
+  color: #0071e2;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
 }

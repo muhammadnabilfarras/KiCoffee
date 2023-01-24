@@ -18,21 +18,7 @@ $_SESSION['beli'] = $_POST['pesanan'];
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Pembayaran</title>
 </head>
-<style>
-    #header{
-        background-color: #f9f9f9;
-    }
-    #header .navbar-container h1{
-        color: #0071e2;
-        font-weight: bold;
-        font-size: 3rem;
-    }
-    .navbar-container{
-        display: flex;
-        justify-content: space-between;
-        margin: 0 30px;
-    }
-</style>
+
 <body>
 
     <header class="header" id="header">
