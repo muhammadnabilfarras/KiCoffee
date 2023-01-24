@@ -174,6 +174,7 @@ html {
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    text-align: center;
 }
 .layer:hover h3{
     bottom: 10%;
@@ -220,7 +221,28 @@ html {
 .product-list:hover .dropBtn {
     background-color: #0071e2;
 }
+.product-btn {
+    border: 2px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 0.9em;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+    margin-left: 46%;
+    margin-bottom: 3%;
+}
 
+.product-btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-btn:hover {
+    background-color: #0071e2;
+}
 /* === Footer Section === */
 .col-footer{
     background-color: whitesmoke;

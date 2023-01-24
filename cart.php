@@ -44,11 +44,22 @@
         font-weight: 600;
         color: #2487ce;
     }
+    #header{
+        background-color: #f9f9f9;
+    }
+    #header .navbar-container h1{
+        color: #0071e2;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .logo {
+    padding: 1.2rem;
+    font-weight: 400;
+    color: #2487ce;
+    }
 
     .navbar-container {
         display: flex;
-        flex-direction: row;
-        flex: 1;
         justify-content: space-between;
         background-color: #fff;
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
@@ -61,7 +72,6 @@
     .navbar {
         /* justify-content: right; */
         padding: 1rem;
-        flex: 1;
     }
 
     .nav-link {
@@ -73,13 +83,11 @@
     }
 
     .navbar ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        overflow: hidden;
+    }
     @media (max-width: 992px) {
     #header .logo {
         font-size: 28px;
@@ -143,7 +151,7 @@
             <h1 class="logo">Kicoffee</h1>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#http://127.0.0.1:5500/index2.html#https://github.com/muhammadnabilfarras/KiCoffee.git" class="nav-link">Home</a></li>
                 </ul>
             </nav>
         </div>
@@ -237,36 +245,7 @@
                 <?php } ?>
             </tbody>
         </table>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Snacks</th>
-                    <!-- <th>Jenis produk</th> -->
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                if(!empty($row))
-                foreach($row as $rows)
-                { 
-                ?>
-                <form action="order.php" method="post">
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="pesanan[]" value="<?php echo $rows['namaProduk']; ?>">
-                        </td>
-                        <td>
-                            <img src="./assets/img/product/<?= $rows['gambar']; ?>">
-                        </td>
-                        <td><?php echo $rows['namaProduk']; ?></td>
-                        <td><?php echo $rows['hargaProduk']; ?></td>
-                        <!-- <td><?php echo $rows['jenisProduk']; ?></td> -->
-                    </tr>
-                <?php } ?>
-            </tbody>
-        </table>
-            <button value="Pesan">Pesan</button>
+            <button value="Pesan">Pesan Disini</button>
                 </form>
     </section>
 

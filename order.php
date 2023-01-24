@@ -18,9 +18,35 @@ $_SESSION['beli'] = $_POST['pesanan'];
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Pembayaran</title>
 </head>
-
+<style>
+    #header{
+        background-color: #f9f9f9;
+    }
+    #header .navbar-container h1{
+        color: #0071e2;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+</style>
 <body>
-<section id=ord>
+
+    <header class="header" id="header">
+        <div class="navbar-container">
+            <h1 class="logo">Kicoffee</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#http://127.0.0.1:5500/index2.html#https://github.com/muhammadnabilfarras/KiCoffee.git" class="nav-link">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id=ord>
 
     <div class="container text-center">
         <div class="row">
