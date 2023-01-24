@@ -40,12 +40,15 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`idProduk`, `namaProduk`, `jumlahProduk`, `jenisProduk`, `hargaProduk`) VALUES
-(1, 'Black Coffee', 5, 'Kopi', 12000),
-(2, 'Latte', 5, 'Kopi', 12000),
-(3, 'Cappuccino', 5, 'Kopi', 12000),
-(4, 'Black Tea', 5, 'Teh', 10000),
-(5, 'Green Tea', 5, 'Teh', 10000),
-(6, 'White Tea', 5, 'Teh', 10000);
+(1, 'Latte Art Machiato', 5, 'Coffee', 38000),
+(2, 'Espresso', 5, 'Coffee', 25000),
+(3, 'Coffee Milk', 5, 'Coffee', 23000),
+(4, 'Lime Lemon', 5, 'non-Coffee', 25000),
+(5, 'Sugar Watermelon', 5, 'non-Coffee', 20000),
+(6, 'Manggo Juice', 5, 'non-Coffee', 28000),
+(7, 'Strawberry Cheese Cake', 5, 'Snack', 35000),
+(8, 'Salad', 5, 'Snack', 20000),
+(9, 'Toast Creamy Brule with Egg', 5, 'Snack', 40000);
 
 -- --------------------------------------------------------
 

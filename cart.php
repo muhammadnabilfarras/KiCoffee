@@ -148,6 +148,9 @@
         /* display: flex;
         flex-direction: column; */
     }
+    .col-product button{
+        margin-left: 45%;
+    }
 </style>
   
 <body>
@@ -250,7 +253,7 @@
                 <?php } ?>
             </tbody>
         </table>
-            <button value="Pesan">Pesan Disini</button>
+            <button value="Pesan"></button>
                 </form>
     </section>
 

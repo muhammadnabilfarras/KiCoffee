@@ -41,12 +41,15 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`idProduk`, `namaProduk`, `jumlahProduk`, `jenisProduk`, `hargaProduk`, `gambar`) VALUES
-(1, 'Black Coffee', 5, 'Kopi', 12000, 'blc.jpg'),
-(2, 'Latte', 5, 'Kopi', 12000, 'lat.jpg'),
-(3, 'Cappuccino', 5, 'Kopi', 12000, 'cap.jpg'),
-(4, 'Black Tea', 5, 'Teh', 10000, 'blt.jpg'),
-(5, 'Green Tea', 5, 'Teh', 10000, 'grt.jpg'),
-(6, 'White Tea', 5, 'Teh', 10000, 'wht.jpg');
+(1, 'Latte Art Machiato', 5, 'Coffee', 38000, 'coffee1.jpg'),
+(2, 'Espresso', 5, 'Coffee', 25000, 'coffee2.jpg'),
+(3, 'Coffee Milk', 5, 'Coffee', 23000, 'coffee3.jpg'),
+(4, 'Lime Lemon', 5, 'non-Coffee', 25000, 'drink1.jpg'),
+(5, 'Sugar Watermelon', 5, 'non-Coffee', 20000, 'drink2.jpg'),
+(6, 'Manggo Juice', 5, 'non-Coffee', 28000, 'drink3.jpg'),
+(7, 'Strawberry Cheese Cake', 5, 'Snack', 35000, 'food3.jpg'),
+(8, 'Salad', 5, 'Snack', 20000, 'food4.jpg'),
+(9, 'Toast Creamy Brule with Egg', 5, 'Snack', 40000, 'food5.jpg');
 
 --
 -- Indexes for dumped tables
