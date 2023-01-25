@@ -33,7 +33,7 @@ html {
 
 .hero-title h1 {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 2rem;
 }
 
@@ -133,14 +133,14 @@ html {
     opacity: 0.7;
 }
 
-.product-image {
+/* .product-image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-}
+} */
 
 .col-product{
     flex-basis: 50%;
@@ -170,7 +170,7 @@ html {
     color: #fff;
     font-size: 26px;
     bottom: 0;
-    left: 55%;
+    left: 50%;
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
@@ -233,6 +233,12 @@ html {
     margin-bottom: 3%;
 }
 
+.product-btn a {
+    text-decoration: none;
+    color: white;
+    margin-left: 6px;
+}
+
 .product-btn span {
     display: flex;
     justify-content: center;
@@ -260,4 +266,25 @@ html {
     padding: 8px
     /* display: flex;
     flex-direction: column; */
+}
+/* === Footer Section End === */
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#listBeverages form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacing {
+    margin-bottom: 2rem;
+}
+
+.recommendation-btn {
+    padding: 1rem;
+    cursor: pointer;
 }

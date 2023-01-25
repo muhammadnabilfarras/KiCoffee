@@ -17,7 +17,7 @@
     <!--Header-->
     <header class="header" id="header">
         <div class="navbar-container">
-            <h1 class="logo">KiCoffee</h1>
+            <h1 class="logo">Kicoffee</h1>
             <nav class="navbar">
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -32,7 +32,7 @@
         <div class="hero-container">
             <div class="hero-title-container">
                 <div class="hero-title">
-                    <h1>KiCoffee</h1>
+                    <h1>Kicoffee</h1>
                     <p>Kicoffee kini hadir untuk anda para pecinta kopi</p>
                 </div>
             </div>
@@ -92,7 +92,7 @@
     <section id="product" class="product">
         <div class="product-container">
             <div class="product-title">
-                <h2 id="product-title">Product</h2><br>
+                <h2 id="product-title">Product</h2>
                 <p>Product Kami terdiri dari Makanan, Minuman dan Kopi. Anda bisa pesan kapanpun.</p>
                 <div class="product-list">
                     <button class="dropBtn">Pilih Menu</button>
@@ -103,6 +103,21 @@
                     </div>
                 </div>
             </div>
+
+        
+
+            <section class="content">
+                <div class="title col-product-category spacing">
+                    <h1>Recommendation</h1>
+                </div>
+                <section class="beverages">
+                    <div id="listBeverages">
+                        <form>  
+                            <input type = "button" onclick = "getpilihanbot()" value = "Tampilkan rekomendasi hari ini" class="recommendation-btn">   
+                        </form>
+                    </div>
+                </section>
+            </section>
             
             <section class="col-product-item">
                 <div id="Coffee" class="col-product-category">
@@ -110,19 +125,19 @@
                     <div id="Coffee" class="col-product-container">
                         <div class="col-product">
                             <img src="./assets/img/product/coffee1.jpg">
-                            <div class="layer">
+                            <div class="layer" id = "latte_art">
                                 <h3>Latte Art Machiatto <br><br><br><br> Rp 38.000</h3>
                             </div>
                         </div>
                         <div class="col-product">
                             <img src="./assets/img/product/coffee2.jpg">
-                            <div class="layer">
+                            <div class="layer" id="espresso">
                                 <h3>Espresso <br><br><br><br> Rp 25.000</h3>
                             </div>
                         </div>
                         <div class="col-product">
                             <img src="./assets/img/product/coffee3.jpg">
-                            <div class="layer">
+                            <div class="layer" id="kopsus">
                                 <h3>Kop-Sus <br><br><br><br> Rp 23.000</h3>
                             </div>
                         </div>
@@ -134,19 +149,19 @@
                     <div id="Coffee" class="col-product-container">               
                         <div class="col-product">
                             <img src="./assets/img/product/drink1.jpg">
-                            <div class="layer">
+                            <div class="layer" id="lime_lemon">
                                 <h3>Lime Lemon <br><br><br><br> Rp 25.000</h3>
                             </div>
                         </div>
                         <div class="col-product">
                             <img src="./assets/img/product/drink2.jpg">
-                            <div class="layer">
+                            <div class="layer" id="sugar_watermelon">
                                 <h3>Sugar Watermelon <br><br><br><br> Rp 20.000</h3>
                             </div>
                         </div>
-                        <div class="col-product">
+                        <div class="col-product" id="col-product">
                             <img src="./assets/img/product/drink3.jpg">
-                            <div class="layer">
+                            <div class="layer" id="manggo_juice">
                                 <h3>Manggo Juice <br><br><br><br> Rp 28.000</h3>
                             </div>
                         </div>
@@ -158,19 +173,19 @@
                     <div class="col-product-container">
                         <div class="col-product">
                             <img src="./assets/img/product/food3.jpg">
-                            <div class="layer">
+                            <div class="layer" id="strawberry">
                                 <h3>Strawberry Cheese Cake <br><br><br><br> Rp 35.000</h3>
                             </div>
                         </div>
                         <div class="col-product">
                             <img src="./assets/img/product/food4.jpg">
-                            <div class="layer">
+                            <div class="layer" id="salad">
                                 <h3>Salad <br><br><br><br> Rp 20.000</h3>
                             </div>
                         </div>
                         <div class="col-product">
                             <img src="./assets/img/product/food5.jpg">
-                            <div class="layer">
+                            <div class="layer" id="toast">
                                 <h3>Toast Creamy Brule with Egg <br><br><br><br> Rp 40.000</h3>
                             </div>
                         </div>
@@ -179,7 +194,7 @@
             </section>
         </div>
             <button class="product-btn" id="#product">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i> Shop now
+                <a href="./cart2.php">Shop Now</a>
             </button>
     </section>
 
@@ -187,20 +202,21 @@
         <section class="col-footer">
             <section class="col-footer1">
                 <h1>KiCoffee</h1>
-                <p>Mari Bercerita, Bersama KiCoffee</p>
+                <p>Mari bercerita bersama KiCoffee</p>
                 <p>Jl. in aja dulu no.69, Kebayoran Lama, Jakarta Selatan</p>
             </section>
 
             <section class="col-footer-contact">
                 <br><br><br><br>
-                <a href="#https://github.com/muhammadnabilfarras/KiCoffee" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#https://github.com/muhammadnabilfarras/KiCoffee" class="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="##https://github.com/muhammadnabilfarras/KiCoffee" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#https://github.com/muhammadnabilfarras/KiCoffee.git" class="github"><i class="fa-brands fa-github"></i></a>
+                <a href="#https://github.com/muhammadnabilfarras/KiCoffee.git" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#https://github.com/muhammadnabilfarras/KiCoffee" class="instagram"><i class="fa-brands fa-instagram"></i></a>
             </section>
             
         </section>
     </footer>
 
     <script src="./assets/js/index.js"></script>
+    <script src="user_recommendation.js"></script>
 </body>
 </html>
